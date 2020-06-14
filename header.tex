@@ -1,0 +1,82 @@
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage[shortlabels]{enumitem}
+
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%% Useful packages and tikz
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.markings}
+\tikzset{->-/.style={decoration={
+  markings,
+  mark=at position #1 with {\arrow{>}}},postaction={decorate}}}
+\tikzset{-<-/.style={decoration={
+  markings,
+  mark=at position #1 with {\arrow{<}}},postaction={decorate}}}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsthm,thmtools,xcolor}
+\usepackage{eqnarray}
+\usepackage{float}
+\usepackage{esint}
+\usepackage{wrapfig}
+\usepackage{gensymb}
+\usepackage{lipsum}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{mathtools}
+
+
+% declare math operator
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\Proj}{Proj}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\nullity}{nullity}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclareMathOperator{\res}{res}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\R}{R}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\Var}{Var}
+
+
+
+%environments
+\newtheorem{ans}{Answer}[section]
+
+\definecolor{darkblue}{RGB}{	0, 0, 139}
+\newtheoremstyle{new}% <name>
+{2pt}% <Space above>
+{2pt}% <Space below>
+{\color{darkblue}}% Body font
+{}% <Indent amount>
+{\bfseries\color{black}}% Theorem head font
+{:}% <Punctuation after theorem head>
+{.5em}% <Space after theorem headi>
+{}% <Theorem head spec (can be left empty, meaning `normal')>
+\theoremstyle{new}
+\newtheorem{qns}{Problem}[section]
+
+\setlength{\parindent}{0cm}
