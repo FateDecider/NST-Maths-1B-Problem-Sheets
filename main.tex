@@ -7,6 +7,9 @@
 \begin{document}
 \maketitle
 \tableofcontents
+\begin{foreword*}
+Many thanks to my supervisor Robert Dillion for his guidance and elaborate supervisions. Email (crsid:~ytt26) me if there are any mistakes.
+\end{foreword*}
 \newpage
 \section{Michaelmas Example Sheet 0}
 \begin{qns}[Multivariate Taylor Expansion]
@@ -752,7 +755,7 @@ where the terms on the right are even ($f_e\cos(kx)$) and odd ($f_o\sin(kx)$) re
 \item 
 $$\tilde{f}_e(k)=\int_{-\infty}^0e^xe^{-ikx}dx+\int_0^\infty e^{-x}e^{-ikx}dx=\frac{1}{1-ik}+\frac{1}{1+ik}=\frac{2}{1+k^2}$$
 \item $$\tilde{g}(k)=\int_{-\alpha}^\alpha e^{-ikx}dx=\frac{i}{k}(e^{-ik\alpha}-e^{ik\alpha})=\frac{2}{k}\sin(k\alpha)$$
-\item Writting $\sinh$ in terms of exponentials, then
+\item Writing $\sinh$ in terms of exponentials, then
 $$\tilde{H}(k)=\frac{1}{2}\int_0^\infty e^{(\alpha-\beta-ik)x}-e^{-(\alpha+\beta+ik)x}dx=\frac{-1}{2}\bigg(\frac{1}{\alpha-\beta-ik}+\frac{1}{\alpha+\beta+ik}\bigg)=\frac{\alpha}{(\beta+ik)^2-\alpha^2}$$
 since $\alpha-\beta<0$.
 \end{enumerate}
@@ -846,7 +849,7 @@ Similarly, $\mathbf{e_3}=\mathbf{u_3}-\frac{\mathbf{e_1}\cdot\mathbf{u_3}}{\math
 $$\mathbf{e_r}=\mathbf{u_r}-\sum_{s=1}^{r-1}\frac{\mathbf{e_s}\cdot\mathbf{u_r}}{\mathbf{e_s}\cdot\mathbf{e_s}}\mathbf{e_s}$$
 We want to prove that this is orthogonal to all the other $\mathbf{e_j}$’s for $j\leq r-1$. We have
 $$\mathbf{e_j}\cdot\mathbf{e_r}=\mathbf{u_r}\cdot\mathbf{e_j}-\sum_{s=1}^{r-1}\frac{\mathbf{e_s}\cdot\mathbf{u_r}}{\mathbf{e_s}\cdot\mathbf{e_s}}(\mathbf{e_s}\cdot\mathbf{e_j})=\mathbf{u_r}\cdot\mathbf{e_j}-\mathbf{e_j}\cdot\mathbf{u_r}=0$$
-So it is orthogonal indeed. Since we have shown the base case $\mathbf{e_1}$, then by induction, this is true and we can construct a set of $m$ orthogonal vectors. If any of these vectors vanish, say $e_r$, then we can only have a set of $r-1$ orthogonal vectors, where $r<n$. This means that $r-1$ vectors span an $n$-dimensional space, which is a contradiciton.\\[5pt]
+So it is orthogonal indeed. Since we have shown the base case $\mathbf{e_1}$, then by induction, this is true and we can construct a set of $m$ orthogonal vectors. If any of these vectors vanish, say $e_r$, then we can only have a set of $r-1$ orthogonal vectors, where $r<n$. This means that $r-1$ vectors span an $n$-dimensional space, which is a contradiction.\\[5pt]
 We have $\mathbf{e_1}=\mathbf{u_1}=(1,1,0,0)^T$. The normalized version is $\mathbf{v_1}=\frac{1}{\sqrt{2}}(1,1,0,0)^T$. We have $\mathbf{u_2}=(0,1,2,0)^T$ and so $\mathbf{e_2}=(0,1,2,0)^T-0.5(1,1,0,0)^T=0.5(-1,1,4,0)^T$ and so $\mathbf{v_2}=\frac{1}{3\sqrt{2}}(-1,1,4,0)^T$. Lastly, $\mathbf{u_3}=(0,0,3,4)^T$. So, $\mathbf{e_3}=(0,0,3,4)^T-\frac{2}{3}(-1,1,4,0)^T=\frac{1}{3}(2,-2,1,12)^T$ and hence $\mathbf{v_3}=\frac{1}{3\sqrt{17}}(2,-2,1,12)^T$. Hence, our desired orthonormal basis is
 $$\bigg\{\frac{1}{\sqrt{2}}\begin{pmatrix}1\\1\\0\\0\\\end{pmatrix},\frac{1}{3\sqrt{2}}\begin{pmatrix}-1\\1\\4\\0\\\end{pmatrix},\frac{1}{3\sqrt{17}}\begin{pmatrix}2\\-2\\1\\12\\\end{pmatrix}\bigg\}$$
 \end{ans}
@@ -1296,7 +1299,7 @@ $$y=\frac{128}{\sqrt{2\pi}}\sum_{n=0}^\infty\frac{y_n}{(2n+1)^2[(2n+1)^2+4]}$$
 \newpage
 \subsection*{Variational Principles}
 \begin{qns}[Euler-Lagrange]
-Find the function $y(x)$ which extremizes the funtional
+Find the function $y(x)$ which extremizes the functional
 $$F[y]=\int_0^a(y+y'^2)dx$$
 subject to the boundary conditions $y(0)=y(a)=0$.
 \end{qns}
